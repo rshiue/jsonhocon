@@ -7,7 +7,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 
 /**
- * Converts a Json file to a Hocon file.
+ * To convert a Json file to a Hocon file.
+ * Or convert a Hocon file to a Json file.
  *
  * e.g.
  * ```
@@ -52,7 +53,6 @@ public class HoconJsonConverter {
             ConfigParseOptions options = ConfigParseOptions.defaults()
                     .setSyntax(ConfigSyntax.CONF)
                     .setAllowMissing(false);
-
 
             Config conf = ConfigFactory.parseFile(source, options);
             ConfigRenderOptions renderOptions = ConfigRenderOptions.concise().setJson(true).setFormatted(true).setComments(false);
