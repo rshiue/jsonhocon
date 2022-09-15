@@ -1,6 +1,15 @@
 # jsonhocon
 
-A extreme simple converter to convert Json File to Hocon File, and vice versa.
+An extreme simple converter to convert Json File to Hocon File, or vice versa.
+
+# Build
+
+Require JDK 8 and Maven.
+
+Run: 
+
+````mvn package````
+ 
 
 # Usage
 
@@ -18,4 +27,6 @@ java -cp json-hocon.jar net.shiue.HoconJsonConverter HOCON "path/to/source.json"
 java -cp json-hocon.jar net.shiue.HoconJsonConverter JSON "path/to/source.conf" "path/to/dest.json" 
 ```
 
+### License
 
+MIT
